@@ -1,0 +1,174 @@
+:root {
+	--mod-cyan: hsl(176, 50%, 47%);
+	--dark-cyan: hsl(176, 72%, 28%);
+	--black: hsl(0, 0%, 0%);
+	--dark-gray: hsl(0, 0%, 48%);
+	--primary: #fff;
+	--card__inner: hsl(0, 5%, 93%);
+	--card__outer: hsl(0, 0%, 100%);
+
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Commissioner', sans-serif;
+}
+
+button {
+	border: none;
+	font-weight: 500;
+	background-color: var(--mod-cyan);
+	color: #fff;
+	border-radius: 100px;
+	padding: 15px 20px;
+}
+
+p {
+	color: var(--dark-gray);
+	line-height: 23px;
+}
+a {
+	text-decoration: none;
+	color: var(--primary);
+}
+.header {
+	background-image: url(./images/image-hero-mobile.jpg);
+	background-size: cover;
+	height: 50vh;
+	color: var(--primary);
+}
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 30px;
+}
+nav .nav-left h3{
+	font-size: 30px;
+	font-weight: 700; 
+}
+nav .nav-right img{
+	align-items: center;
+}
+nav .nav-right ul li {
+	display: none;
+}
+.container {
+	margin: 0 50px;
+	position: relative;
+	top: -50px;
+}
+.card {
+	background-color: var(--card__outer);
+	box-shadow: 0 0 1px gray;
+	border-radius: 10px;
+	padding: 20px;
+	margin-top: 20px;
+	text-align: center;
+}
+.card__mastercraft #logo_mc{
+	position: relative;
+	top: -50px;
+}
+.card__mastercraft .flex{
+	justify-content: center;
+	display: flex;
+	margin-top: 10px;
+}
+.card__mastercraft .flex button {
+	margin-right: 10px;
+}
+
+.price .prc {
+	padding-bottom: 20px;
+}
+.price hr {
+	color: gray;
+	width: 50px;
+	margin: 20px auto;
+}
+
+progress {
+    border: 0;
+    height: 20px;
+    border-radius: 20px;
+    width: 90%;
+}
+progress::-webkit-progress-bar {
+    border: 0;
+    height: 20px;
+    border-radius: 20px;
+    width: 90%;
+    background-color: var(--dark-cyan);
+}
+progress::-webkit-progress-value {
+    border: 0;
+    height: 20px;
+    border-radius: 20px;
+    width: 90%;
+    background-color: var(--dark-cyan);
+}
+progress::-moz-progress-bar {
+    border: 0;
+    height: 20px;
+    border-radius: 20px;
+    background-color: var(--dark-cyan);
+}
+.about {
+	text-align: left;
+}
+.about h2 {
+	margin: 10px 0;
+}
+.about p {
+	margin: 15px 0;
+}
+.about .inner {
+	text-align: left;
+}
+.about .inner h4 {
+	color: var(--mod-cyan);
+}
+.about .inner b {
+	font-weight: 500px;
+	color: black;
+	font-size: 25px;
+	align-items: center;
+
+}
+.about .out__stock h3,
+.about .out__stock p,
+.about .out__stock h4,
+.about .out__stock b,
+.about .out__stock button{
+	opacity: 0.5;
+}
+.about .out__stock button {
+	background-color: var(--dark-gray)
+}
+
+@media only screen and (min-width: 768px) {
+	.header {
+		background-image: url(./images/image-hero-desktop.jpg);
+		background-size: cover;
+		height: 70vh;
+		color: var(--primary);
+	}
+	nav .nav-right ul li {
+		display: block;
+	}
+	nav .nav-right ul {
+		display: flex;
+	}
+	nav .nav-right ul li a {
+		margin: 20px;
+	}
+	nav .nav-right img {
+		display: none;
+	}
+	.container {
+		top: -120px;
+		margin: 0 200px;
+	}
+} 
